@@ -6,7 +6,15 @@
 
 	$insert = "SELECT* From users Where '$Username'= username && '$Dbpass'=password ;";
 	$search = mysqli_query($conn, $insert);
-
+	$insert2 = "SELECT* From admins Where '$Username'= username && '$Password'=password ;";
+	$search2 = mysqli_query($conn, $insert2);
+	if(mysqli_num_rows($search2)){
+	session_start();
+	$_SESSION['AdminFlag']=TRUE;
+	echo $_SESSION['AdminFlag'];
+	header("Location:adminTrue.php");
+		
+}
 	if(mysqli_num_rows($search)){
 		session_start();
 		$_SESSION['Username'] = $Username;
