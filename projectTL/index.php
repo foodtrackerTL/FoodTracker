@@ -10,18 +10,10 @@
 <!--    links    -->
 </head>
 <!-- Side navigation -->
-<div class="sidenav" style="display: none;" id="6">
-  <a href="#">Προγραμματισμός Γευμάτων</a>
-  <a href="#">Διαθέσιμα Προϊόντα</a>
-  <a href="#">Πρόσθεσε Προϊόν</a>
-  <a href="#">Αίτημα Φιλίας</a>
-  <a href="#">Διαχείριση Λογαριασμού</a>
-</div>
-<div id="5" class="sidenav" >
-  <img src="logo3.jpg" onclick="window.location.href='UserChoice.php'" class="logo" alt="" height="122" width="170">
-  <br>
- Θέλεις παραπάνω πληροφορίες για ένα προϊόν; Γράψε το όνομα ή σκάναρε το barcode
-</div>
+
+
+
+
 
 <!-- Page content -->
 
@@ -31,6 +23,13 @@
   <meta charset="UTF-8">
 
 <header class="navbar-custom">
+<div class="outer-container">
+  
+
+
+
+
+
 	<div class="container">
 		
 		<nav class="navbar navbar-expand-lg navbar-light navbar-inverse">
@@ -40,15 +39,12 @@
     <span class="navbar-toggler-icon"></span>
   
   </button>
-  <button type ="button" >Σχετικά με Εμάς</button>
-  <input type="text" placeholder="Search.." size="5">
+  <button type ="button" >About</button>
+  <input  type="text" placeholder="Search..">
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
 
-
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="inout">
 
 <button id = "1" type ="button" onclick="document.getElementById('id01').style.display='block'">Εγγραφή</button>
 <button id = "2" type ="button" onclick="document.getElementById('id02').style.display='block'">Είσοδος</button>
@@ -57,7 +53,9 @@
 
   </div>
 </nav>
-	</div>
+
+</div>
+
 
 </header>
 <!--
@@ -70,7 +68,7 @@
   	 <!-- Modal Content -->
   <form class="modal-content animate" action="DbSignup.php" method="POST">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="img_avatar21.png" alt="Avatar" class="avatar">
     </div>
     <div class="container">
       <h1>Εγγραφή</h1>
@@ -78,18 +76,36 @@
       <hr>
       <label for="Username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="Username" required>
-
+      <br>
       <label for="Password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="Password" required>
+      <br>
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter email" name="Email" required>
-
-
-
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>   
-        <button type="submit" class="signup">Είσοδος</button>
+      <br>
+      <label for="name"><b>Όνομα</b></label>
+      <input type="text" placeholder="enter name" name="name" required>
+      <br>
+      <label for="lastname"><b>Επώνυμο</b></label>
+      <input type="text" placeholder="Enter lastname" name="lastname" required>
+      <br>
+       <strong>Φύλο:</strong>
+      <input type="radio" id="male" name="gender" value="male">
+       <label for="male">Male</label>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">Female</label><br>
+       <label for="age"><strong>Ηλικία:</strong></label>
+        <input type="number" id="age" name="age">
+        <br>
+          <label for="weight"><strong>Βάρος :</strong></label>
+        <input type="number" id="weight" name="weight"><br>
+      <label for="loc"><b>Πόλη</b></label>
+      <input type="text" placeholder="location" name="loc" required>
+      <br>
+       <label for="allergies"><b>Αλλεργίες</b></label>
+      <input type="text" placeholder="Enter allergies" name="allergies" required>
+      <br> 
+        <button type="submit" class="signup">Εγγραφή</button>
  
     </div>
   </form>
@@ -103,7 +119,7 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content animate" action="DbLogin.php" method="POST">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="img_avatar21.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -125,6 +141,87 @@ class="close" title="Close Modal">&times;</span>
     </div>
   </form>
 </div>
+<body>
+  <div class="outercontainer">
+    <div class="sidenav" style="display: none;" id="6">
+  <img src="logo3.jpg" onclick="window.location.href='UserChoice.php'" class="logo" alt="">
+  <a href="#">Προγραμματισμός Γευμάτων</a>
+  <a href="#">Διαθέσιμα Προϊόντα</a>
+  <a href="#">Πρόσθεσε Προϊόν</a>
+  <a href="#">Αίτημα Φιλίας</a>
+  <a href="#">Διαχείριση Λογαριασμού</a>
+</div>
+
+<div id="5" class="sidenav" >
+  <img src="logo3.jpg" onclick="window.location.href='UserChoice.php'" class="logo" alt="">
+  <br>
+ Θέλεις παραπάνω πληροφορίες για ένα προϊόν; Γράψε το όνομα ή σκάναρε το barcode
+</div>
+
+<div class="content">
+  <style>
+    h2 {
+  text-align: center;
+}
+    h4 {
+  text-align: center;
+  position: relative;
+  bottom:   200px;
+}
+    h6 {
+  float: right;
+  position: relative;
+  bottom:   200px;
+}
+img{
+  float left;
+
+}
+  </style>
+  <div class="articles"><h2>Πρόσφατα Άρθρα:</h2><br><br>
+  <?php
+  include 'connection.php';
+  $insert = "SELECT * From articles ORDER BY 'date' DESC";
+  $search = mysqli_query($conn, $insert);
+  if (mysqli_num_rows($search)) {
+        $rank = 0;
+        $last_score = false;
+        $rows = 0;
+       while($row = $search->fetch_assoc() AND $rank < 4) {
+                 $rows++;
+    if( $last_score!= $row['title'] ){
+      $last_score = $row['title'];
+      $rank = $rows;
+    }
+
+    echo"<img src='" . $row['thumbnail'] . "' alt='error'>".'<h4>'.$row['title'].'<h4>'.'<h6>'.$row['content'].'<h6>'."<br><br><br><br><br><br><br><br><br><br>";
+       }}
+  ?>
+</div>
+</div>
+<div class="sidenav2">
+  <div class="katata3i"> <strong>Κατάταξη Χρηστών:</strong><br><br>
+  <?php
+  include 'connection.php';
+  $insert = "SELECT username,userscore From users ORDER BY userscore DESC";
+  $search = mysqli_query($conn, $insert);
+  if (mysqli_num_rows($search)) {
+        $rank = 0;
+        $last_score = false;
+        $rows = 0;
+       while($row = $search->fetch_assoc() AND $rank < 9) {
+                 $rows++;
+    if( $last_score!= $row['userscore'] ){
+      $last_score = $row['userscore'];
+      $rank = $rows;
+    }
+    echo "rank ".$rank." : ".$row['username']." με score: ".$row['userscore']."<br>";
+       }}
+  ?>
+</div>
+  </div>
+</div>
+</body>
 
 <script> 
 // Get the Modal                              gia na kleinei otan kaneis click eksw apo sign up
