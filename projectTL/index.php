@@ -44,12 +44,12 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <form class="inout">
+
 
 <button id = "1" type ="button" onclick="document.getElementById('id01').style.display='block'">Εγγραφή</button>
 <button id = "2" type ="button" onclick="document.getElementById('id02').style.display='block'">Είσοδος</button>
 <a href="logout.php" style="display: none;" id="3" class="logout">Έξοδος</a>
-    </form>
+
 
   </div>
 </nav>
@@ -166,15 +166,14 @@ class="close" title="Close Modal">&times;</span>
     h4 {
   text-align: center;
   position: relative;
-  bottom:   200px;
+  bottom:   10%;
+
 }
     h6 {
-  float: right;
-  position: relative;
-  bottom:   200px;
+text-align: center;
 }
 img{
-  float left;
+float:left;
 
 }
   </style>
@@ -194,7 +193,7 @@ img{
       $rank = $rows;
     }
 
-    echo"<img src='" . $row['thumbnail'] . "' alt='error'>".'<h4>'.$row['title'].'<h4>'.'<h6>'.$row['content'].'<h6>'."<br><br><br><br><br><br><br><br><br><br>";
+    echo"<img src='" . $row['thumbnail'] . "' alt='error'>".'<h4>'.$row['title'].'<h4>'.'<h6>'.$row['content'].'<h6>'."<br><br><br><br><br>";
        }}
   ?>
 </div>

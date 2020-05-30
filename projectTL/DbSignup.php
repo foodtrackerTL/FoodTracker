@@ -2,6 +2,13 @@
 	$Username = $_POST['Username'];
 	$Password = $_POST['Password'];
 	$email = $_POST['Email'];
+	$name = $_POST['name'];
+	$lastname = $_POST['lastname'];
+	$gender = $_POST['gender'];
+	$age = $_POST['age'];
+	$weight = $_POST['weight'];
+	$loc = $_POST['loc'];
+	$allergies = $_POST['allergies'];
 //	echo $Username,$Password,$email;
 	/*
 	if (!empty($Password)) {
@@ -33,7 +40,7 @@
 		$dbpass=md5($Password);
 		$iv = substr( hash( 'sha256', "aaaabbbbcccccddddeweee" ), 0, 16 );
 		$userid=openssl_encrypt($email,'AES-128-CBC',$Password,OPENSSL_RAW_DATA, $iv);
-		$insert="INSERT INTO users(username,password,email,hid) values('$Username','$dbpass','$email','$userid');";
+		$insert="INSERT INTO users(username,password,email,hid,Name,Lastname,Sex,age,weight,Location,allergies) values('$Username','$dbpass','$email','$userid','$name','$lastname','$gender','$age','$weight','$loc','$allergies');";
 		$search = mysqli_query($conn, $insert);
 
 	}
