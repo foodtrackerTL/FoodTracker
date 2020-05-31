@@ -20,17 +20,43 @@
    
   </script>
 
+<div class="outercontainer">
+<div class="content">
+  <style>
+    h2 {
+  text-align: center;
+
+}
+.content
+{
+
+padding-left: 17%;
+}
+    h4 {
+  text-align: center;
+  position: relative;
+  bottom:   10%;
+    width: 110%;
+
+}
+    h6 {
+text-align: center;
+width: 120%;
+}
+img{
+float:left;
+
+}
+  </style>
+  <div class="articles"><h2>Διαχείριση Βάσης:</h2><br><br>
   
-<div class="outer-container">
-  <div class="content">
-
-
-
-
-
 </div>
 </div>
-
+<div class="sidenav2">
+  <div class="katata3i">
+  
+</div>
+  </div>
 
 
 

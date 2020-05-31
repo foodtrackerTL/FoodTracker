@@ -12,6 +12,7 @@
 	session_start();
 	$_SESSION['AdminFlag']=TRUE;
 	echo $_SESSION['AdminFlag'];
+	$_SESSION['Username'] = $Username;
 	header("Location:adminTrue.php");
 		
 }

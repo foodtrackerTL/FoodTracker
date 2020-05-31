@@ -143,14 +143,7 @@ class="close" title="Close Modal">&times;</span>
 </div>
 <body>
   <div class="outercontainer">
-    <div class="sidenav" style="display: none;" id="6">
-  <img src="logo3.jpg" onclick="window.location.href='UserChoice.php'" class="logo" alt="">
-  <a href="#">Προγραμματισμός Γευμάτων</a>
-  <a href="#">Διαθέσιμα Προϊόντα</a>
-  <a href="#">Πρόσθεσε Προϊόν</a>
-  <a href="#">Αίτημα Φιλίας</a>
-  <a href="#">Διαχείριση Λογαριασμού</a>
-</div>
+
 
 <div id="5" class="sidenav" >
   <img src="logo3.jpg" onclick="window.location.href='UserChoice.php'" class="logo" alt="">
